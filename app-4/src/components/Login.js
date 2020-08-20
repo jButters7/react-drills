@@ -13,17 +13,17 @@ class Login extends Component {
   handleUsernameChanges(input) {
     this.setState({
       username: input
-    })
+    });
   }
 
   handlePasswordChanges(input) {
     this.setState({
       password: input
-    })
+    });
   }
 
   displayAlert() {
-    alert(`Username: ${this.state.username} Password: ${this.state.password}`)
+    alert(`Username: ${this.state.username} Password: ${this.state.password}`);
   }
 
   render() {
@@ -34,7 +34,6 @@ class Login extends Component {
         <button onClick={() => this.displayAlert()}>Login</button>
       </div>
     )
-
   }
 }
 export default Login;
